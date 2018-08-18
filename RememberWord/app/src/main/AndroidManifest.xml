@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rememberword">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTask"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Look_word"  android:label="复习单词">
+            <intent-filter>
+                <action android:name="com.example.rememberword.LOOK_WORD"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".write_word"  android:label="默写单词">
+            <intent-filter>
+                <action android:name="com.example.rememberword.WRITE_WORD"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Write_finish"  android:label="默写情况">
+            <intent-filter>
+                <action android:name="com.example.rememberword.WRITE_FINISH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Write_word_select"  android:label="选择默写模式">
+            <intent-filter>
+                <action android:name="com.example.rememberword.WRITE_WORD_SELECT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Select_part_word"  android:label="选择需要默写的单词">
+            <intent-filter>
+                <action android:name="com.example.rememberword.SELECT_PART_WORD"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
